@@ -1,0 +1,9 @@
+C:\Users\S0meUs3r\Documents\Visual Studio 2010\Projects\WindowsApplication5\WindowsApplication5\bin\Debug\WindowsApplication5.exe
+C:\Users\S0meUs3r\Documents\Visual Studio 2010\Projects\WindowsApplication5\WindowsApplication5\bin\Debug\WindowsApplication5.pdb
+C:\Users\S0meUs3r\Documents\Visual Studio 2010\Projects\WindowsApplication5\WindowsApplication5\bin\Debug\WindowsApplication5.xml
+C:\Users\S0meUs3r\Documents\Visual Studio 2010\Projects\WindowsApplication5\WindowsApplication5\obj\x86\Debug\WindowsApplication5.Form1.resources
+C:\Users\S0meUs3r\Documents\Visual Studio 2010\Projects\WindowsApplication5\WindowsApplication5\obj\x86\Debug\WindowsApplication5.Resources.resources
+C:\Users\S0meUs3r\Documents\Visual Studio 2010\Projects\WindowsApplication5\WindowsApplication5\obj\x86\Debug\WindowsApplication5.vbproj.GenerateResource.Cache
+C:\Users\S0meUs3r\Documents\Visual Studio 2010\Projects\WindowsApplication5\WindowsApplication5\obj\x86\Debug\WindowsApplication5.exe
+C:\Users\S0meUs3r\Documents\Visual Studio 2010\Projects\WindowsApplication5\WindowsApplication5\obj\x86\Debug\WindowsApplication5.xml
+C:\Users\S0meUs3r\Documents\Visual Studio 2010\Projects\WindowsApplication5\WindowsApplication5\obj\x86\Debug\WindowsApplication5.pdb
