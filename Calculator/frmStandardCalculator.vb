@@ -1,4 +1,5 @@
-﻿Public Class Form1
+﻿Public Class frmStandardCalculator
+
     Private equal As Boolean
     Private operation As Boolean
     Private isdotexistbool As Boolean
@@ -18,6 +19,7 @@
             operation = True
         End If
     End Sub
+
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Removezero("1")
     End Sub
@@ -100,7 +102,7 @@
         End If
     End Sub
 
-    Private Sub Button_div_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button_Div.Click
+    Private Sub Button_Div_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button_Div.Click
         isdotexistbool = False
         If operation = True Then
             Removezero("/")
@@ -108,7 +110,7 @@
         End If
     End Sub
 
-    Private Sub Button_Equal_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button_Equal.Click
+    Private Sub Button_Equal_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button_Equals.Click
         Dim equation As String = TextBox_Big.Text
         TextBox_Small.Text = TextBox_Big.Text
         Try
@@ -137,12 +139,58 @@
         isdotexistbool = False
     End Sub
 
-    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub frmStandardCalculator_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         isdotexistbool = False
         operation = False
         equal = False
     End Sub
 
+    Private Sub frmStandardCalculator_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.D7 AndAlso e.Modifiers = Keys.Shift Then
+            Button_Modulus.PerformClick()
+        End If
+
+        Select Case e.KeyData
+            Case Keys.D0, Keys.NumPad0
+                Button0.PerformClick()
+            Case Keys.D1, Keys.NumPad1
+                Button1.PerformClick()
+            Case Keys.D2, Keys.NumPad2
+                Button2.PerformClick()
+            Case Keys.D3, Keys.NumPad3
+                Button3.PerformClick()
+            Case Keys.D4, Keys.NumPad4
+                Button4.PerformClick()
+            Case Keys.D5, Keys.NumPad5
+                Button5.PerformClick()
+            Case Keys.D6, Keys.NumPad6
+                Button6.PerformClick()
+            Case Keys.D7, Keys.NumPad7
+                Button7.PerformClick()
+            Case Keys.D8, Keys.NumPad8
+                Button8.PerformClick()
+            Case Keys.D9, Keys.NumPad9
+                Button9.PerformClick()
+            Case Keys.OemPeriod
+                Button_Dot.PerformClick()
+            Case Keys.Escape
+                Button_Clear.PerformClick()
+            Case Keys.OemBackslash
+                Button_AddSub.PerformClick()
+            Case Keys.Multiply
+                Button_Mul.PerformClick()
+            Case Keys.Divide
+                Button_Div.PerformClick()
+            Case Keys.Subtract
+                Button_Sub.PerformClick()
+            Case Keys.Add
+                Button_Add.PerformClick()
+            Case Keys.Enter
+                Button_Equals.PerformClick()
+        End Select
+
+
+    End Sub
 
 End Class
 
